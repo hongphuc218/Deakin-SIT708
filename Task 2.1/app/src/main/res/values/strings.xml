@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="select_category">Select Category</string>
+    <string name="label_from">From</string>
+    <string name="label_to">To</string>
+    <string name="enter_source">Enter source value</string>
+    <string name="enter_destination">Enter destination value</string>
+    <string name="convert">Convert</string>
+    <string name="result">Result</string>
+    <string name="invalid_input">Invalid input</string>
+    <string name="temperature_below_absolute_zero">Temperature cannot be below absolute zero (-273.15°C)</string>
+    <string name="conversion_error">Conversion error</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <!-- Container Layout to Center Everything -->
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:text="@string/app_name"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Category Label -->
+        <TextView
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_category"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Category Spinner -->
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- From Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_from"
+            android:layout_marginBottom="4dp" />
+
+        <!-- From Unit Spinner -->
+        <Spinner
+            android:id="@+id/fromUnitSpinner"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:importantForAccessibility="yes" />
+        <!-- From Input -->
+        <EditText
+            android:id="@+id/fromInput"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:hint="@string/enter_source"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:importantForAccessibility="yes" />
+
+        <!-- To Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_to"
+            android:layout_marginBottom="4dp" />
+        <!-- To Unit Spinner -->
+        <Spinner
+            android:id="@+id/toUnitSpinner"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:importantForAccessibility="yes" />
+
+        <!-- Result TextView -->
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Convert Button -->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/convert"
+            android:importantForAccessibility="yes" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
