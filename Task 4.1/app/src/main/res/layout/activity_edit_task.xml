@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditTaskActivity">
+
+    <!-- Toolbar with TextView as title -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?actionBarSize"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="15dp"
+        android:theme="?actionBarTheme">
+
+        <TextView
+            style="@style/Widget.MaterialComponents.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/new_task"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/taskTitle"
+        style="@style/Widget.App.Input"
+        app:boxStrokeColor="@color/blue"
+        android:textColorHint="@color/blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/blue"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Task Description -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/taskDescription"
+        style="@style/Widget.App.Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/taskDate"
+        style="@style/Widget.App.Input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <Button
+            android:id="@+id/datePickerButton"
+            style="@style/Widget.App.OutlinedButton"
+            app:startIconDrawable="@drawable/baseline_calendar_month_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="20dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveTask"
+        style="@style/Widget.App.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        android:text="@string/save"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/deleteTask"
+        style="@style/Widget.App.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="20dp"
+        android:text="@string/delete"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

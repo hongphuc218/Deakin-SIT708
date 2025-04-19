@@ -1,0 +1,24 @@
+<resources>
+    <style name="Theme.TaskManagementApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="colorAccent">@color/gray</item>
+    </style>
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/blue</item>
+        <item name="rippleColor">@color/light_blue</item>
+
+    </style>
+
+    <style name="Widget.App.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/blue</item>
+        <item name="rippleColor">@color/light_blue</item>
+        <item name="strokeColor">@color/blue</item>
+    </style>
+
+    <style name="Widget.App.Input" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/blue</item>
+        <item name="android:textColorHint">@color/blue</item>
+    </style>
+</resources>

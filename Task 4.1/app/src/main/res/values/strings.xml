@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Task Management App</string>
+    <string name="add_task">+ Add Task</string>
+    <string name="todo">TODO</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="new_task">NEW TASK</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+</resources>
